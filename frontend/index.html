@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Personalized Book Recommendation System</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <h1>📚 Personalized Book Recommendation System</h1>
+
+    <p class="subtitle">
+        Discover books you'll love using NLP-powered recommendations.
+    </p>
+
+    <!-- BOOK SEARCH SECTION -->
+    <section class="search-section">
+
+        <h2>🔍 Find Books Similar to a Book You Like</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="bookInput"
+                placeholder="Enter a book title..."
+            >
+
+            <button onclick="getRecommendations()">
+                Recommend
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTEREST SECTION -->
+    <section class="interests-section">
+
+        <h2>🎯 Get Recommendations Based on Your Interests</h2>
+
+        <p>
+            Select up to 5 interests to discover personalized books.
+        </p>
+
+        <div class="interest-list">
+
+            <button class="interest-btn" data-interest="Fiction">
+                📖 Fiction
+            </button>
+
+            <button class="interest-btn" data-interest="Juvenile Fiction">
+                🧒 Kids & Young Readers
+            </button>
+
+            <button class="interest-btn" data-interest="Biography & Autobiography">
+                👤 Biography
+            </button>
+
+            <button class="interest-btn" data-interest="History">
+                🏛️ History
+            </button>
+
+            <button class="interest-btn" data-interest="Philosophy">
+                🧠 Philosophy
+            </button>
+
+            <button class="interest-btn" data-interest="Drama">
+                🎭 Drama
+            </button>
+
+            <button class="interest-btn" data-interest="Science">
+                🔬 Science
+            </button>
+
+            <button class="interest-btn" data-interest="Poetry">
+                ✍️ Poetry
+            </button>
+
+            <button class="interest-btn" data-interest="Business & Economics">
+                💼 Business
+            </button>
+
+            <button class="interest-btn" data-interest="Social Science">
+                🌎 Social Science
+            </button>
+
+            <button class="interest-btn" data-interest="Cooking">
+                🍳 Cooking
+            </button>
+
+            <button class="interest-btn" data-interest="Psychology">
+                🧠 Psychology
+            </button>
+
+            <button class="interest-btn" data-interest="Travel">
+                ✈️ Travel
+            </button>
+
+            <button class="interest-btn" data-interest="Health & Fitness">
+                💪 Health & Fitness
+            </button>
+
+            <button class="interest-btn" data-interest="Computers">
+                💻 Computers & Technology
+            </button>
+
+        </div>
+
+        <button
+            id="interestRecommendBtn"
+            onclick="getInterestRecommendations()">
+            ✨ Recommend For Me
+        </button>
+
+    </section>
+
+
+    <!-- SHARED STATUS MESSAGE -->
+    <p id="message"></p>
+
+
+    <!-- BOOK SEARCH RESULTS -->
+    <section class="results-section">
+
+        <h2>📚 Book Search Results</h2>
+
+        <div id="bookRecommendations"></div>
+
+    </section>
+
+
+    <!-- INTEREST RESULTS -->
+    <section class="results-section">
+
+        <h2>🎯 Interest-Based Recommendations</h2>
+
+        <div id="interestRecommendations"></div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>
